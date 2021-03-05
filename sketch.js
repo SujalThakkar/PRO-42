@@ -38,7 +38,7 @@ function setup() {
 
    ground2 = createSprite(width/2 - 1000 ,height/2 - 100);
   ground2.addImage(jungle);
-  ground2.scale = 2
+  ground2.scale = 2.8;
   ground2.velocityX = -2
   ground2.depth = monkey.depth
   monkey.depth = monkey.depth + 1
