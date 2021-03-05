@@ -26,11 +26,11 @@ function preload(){
  
 }
 function setup() {
-  createCanvas(1400,800)
+  createCanvas(1400,800);
   monkey = createSprite(width/2 - 300,height - 40, 20,10);
   monkey.addAnimation("running",monkey_running);
   monkey.scale = 0.12;
- monkey.debug = false;
+  monkey.debug = false;
   monkey.setCollider("rectangle",0,0,monkey.width,monkey.height);
  
   ground = createSprite(width/2,height - 40,width*2,10);
