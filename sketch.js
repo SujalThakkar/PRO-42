@@ -26,7 +26,7 @@ function preload(){
  
 }
 function setup() {
-  createCanvas(1400,800);
+  createCanvas(windowWidth,windowHeight);
   monkey = createSprite(width/2 - 300,height - 40, 20,10);
   monkey.addAnimation("running",monkey_running);
   monkey.scale = 0.12;
