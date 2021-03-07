@@ -106,7 +106,7 @@ function draw() {
   spawnbanana();
   
   if (obstacleGroup.isTouching(monkey)){
-    ground.velocity = 0
+    ground2.velocity = 0
     monkey.scale = 0.16
     score = -2;
     obstacleGroup.destroyEach();
