@@ -29,16 +29,16 @@ function setup() {
   createCanvas(windowWidth,windowHeight);
   monkey = createSprite(width/2 - 300,height - 40, 20,10);
   monkey.addAnimation("running",monkey_running);
-  monkey.scale = 0.12;
+  monkey.scale = 0.16;
   monkey.debug = false;
   monkey.setCollider("rectangle",0,0,monkey.width,monkey.height);
  
   ground = createSprite(width/2,height - 40,width*2,10);
   ground.visible = false;
 
-   ground2 = createSprite(width/2 - 1000 ,height/2 - 100);
+   ground2 = createSprite(width/2 - 1000 ,height/2 - 400);
   ground2.addImage(jungle);
-  ground2.scale = 2.8;
+  ground2.scale = 4.2;
   ground2.velocityX = -2
   ground2.depth = monkey.depth
   monkey.depth = monkey.depth + 1
