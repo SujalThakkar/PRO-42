@@ -106,11 +106,11 @@ function draw() {
   spawnbanana();
   
   if (obstacleGroup.isTouching(monkey)){
-  //  ground.velocity = 0
-    monkey.scale = 0.12
+    ground.velocity = 0
+    monkey.scale = 0.16
     score = score - 2;
     obstacleGroup.destroyEach();
-  // gameState = END ;
+   gameState = END ;
   }
     
   }
@@ -118,7 +118,7 @@ function draw() {
   else if (gameState === END){
     obstacleGroup.setVelocityXEach(0);
     FoodGroup.setVelocityXEach(0);
-    
+    monkey.visible = false;
   }
   
 
@@ -129,6 +129,13 @@ function draw() {
   fill("white")
   text("Survival Time: "+ score,width/2 - 100,height/2 - 200);
   // score.depth = monkey.depth + 1
+  
+   if (gameState === END){
+    stroke("red")
+    textSize(44);
+    fill("red")
+    text("You loose ",width/2 - 100,height/2);
+  }
 }
 
 function spawnobstacle(){
