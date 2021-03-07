@@ -67,13 +67,13 @@ function draw() {
     //  score = score + Math.round(getFrameRate()/60);
     
     switch(score){
-      case 10: monkey.scale = 0.12;
+      case 10: monkey.scale = 0.16;
           break;
-      case 20: monkey.scale = 0.14;
+      case 20: monkey.scale = 0.17;
           break;
-      case 40: monkey.scale = 0.16;
+      case 40: monkey.scale = 0.18;
           break;
-      case 80: monkey.scale = 0.18;
+      case 80: monkey.scale = 0.19;
       default: break;
     }
     
@@ -108,7 +108,7 @@ function draw() {
   if (obstacleGroup.isTouching(monkey)){
     ground.velocity = 0
     monkey.scale = 0.16
-    score = score - 2;
+    score = -2;
     obstacleGroup.destroyEach();
    gameState = END ;
   }
